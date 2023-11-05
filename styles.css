@@ -1,0 +1,35 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  .main-div {
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+    opacity: 0;
+    animation: slideAndFade 2s ease-in-out forwards;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: rgb(31, 31, 31);
+    margin: 0; 
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  @keyframes slideAndFade {
+    0% {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
