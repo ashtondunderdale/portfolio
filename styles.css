@@ -5,7 +5,7 @@ body {
   
   .main-div {
     width: 540px;
-    height: 1200px;
+    height: 1400px;
     padding: 20px;
     margin-top: 100px;
     margin-left: 200px;
@@ -19,7 +19,6 @@ body {
   
   h2 {
     margin: 0;
-    color: rgb(64, 64, 64);
     animation: slideAndFade 2s ease-in-out forwards;
   }
 
@@ -98,6 +97,12 @@ li.nav-item.right {
     margin-left: -30px;
   }
 
+li:hover{
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
 .li1{
     animation: slideAndFade 3s ease-in-out forwards;
 }
@@ -117,3 +122,12 @@ li.nav-item.right {
 .about{
     margin-top: 100px;
 }
+
+.projects{
+    margin-top: 100px;
+}
+
+.projectsText {
+    margin-left: 20px;
+    text-indent: -20px; 
+  }
