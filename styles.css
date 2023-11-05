@@ -12,7 +12,7 @@ body {
   }
   
   h1 {
-    font-size: 50px;
+    font-size: 55px;
     margin: 0; 
     animation: slideAndFade 2s ease-in-out forwards;
   }
@@ -55,22 +55,23 @@ li.nav-item a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 23px;
-    animation: slideDownAndFade 2s ease-in-out forwards;
+    margin-left: 25px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    animation: slideDownAndFade 3s;
 }
 
 li.nav-item a:hover {
     color: rgb(83, 83, 83);
+    transform: scale(1.03); 
 }
 
 @keyframes slideDownAndFade {
     0% {
-      transform: translateY(-10px);
-      opacity: 0;
+        transform: translateY(-10px);
+        opacity: 0;
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        opacity: 1;
     }
   }
 
@@ -87,13 +88,13 @@ li.nav-item a:hover {
   }
 
 .li1{
-    animation: slideAndFade 3.33s ease-in-out forwards;
+    animation: slideAndFade 3s ease-in-out forwards;
 }
 
 .li2{
-    animation: slideAndFade 3.67s ease-in-out forwards;
+    animation: slideAndFade 3.33s ease-in-out forwards;
 }
 
 .li3{
-    animation: slideAndFade 4s ease-in-out forwards;
+    animation: slideAndFade 3.67s ease-in-out forwards;
 }
