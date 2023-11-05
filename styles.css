@@ -1,5 +1,6 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    color: rgb(31, 31, 31);
   }
   
   .main-div {
@@ -8,23 +9,27 @@ body {
     padding: 20px;
     margin-top: 100px;
     margin-left: 200px;
-    opacity: 0;
-    animation: slideAndFade 2s ease-in-out forwards;
   }
   
   h1 {
     font-size: 50px;
-    color: rgb(31, 31, 31);
     margin: 0; 
+    animation: slideAndFade 2s ease-in-out forwards;
   }
   
   h2 {
     margin: 0;
+    animation: slideAndFade 2.5s ease-in-out forwards;
   }
-  
+
+  p{
+    margin-top: 40px;
+    animation: slideAndFade 3s ease-in-out forwards;
+  }
+
   @keyframes slideAndFade {
     0% {
-      transform: translateX(-40px);
+      transform: translateX(-60px);
       opacity: 0;
     }
     100% {
@@ -33,3 +38,37 @@ body {
     }
   }
   
+  ul.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 160px;
+}
+
+li.nav-item {
+    float: left;
+}
+
+li.nav-item a {
+    display: block;
+    color: rgb(31, 31, 31);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    animation: slideDownAndFade 2s ease-in-out forwards;
+
+}
+
+li.nav-item a:hover {
+    color: black;
+}
+
+@keyframes slideDownAndFade {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
