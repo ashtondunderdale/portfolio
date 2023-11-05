@@ -4,8 +4,8 @@ body {
   }
   
   .main-div {
-    width: 600px;
-    height: 200px;
+    width: 540px;
+    height: 1200px;
     padding: 20px;
     margin-top: 100px;
     margin-left: 200px;
@@ -14,18 +14,23 @@ body {
   h1 {
     font-size: 55px;
     margin: 0; 
-    animation: slideAndFade 2s ease-in-out forwards;
+    animation: slideAndFade 1.5s ease-in-out forwards;
   }
   
   h2 {
     margin: 0;
     color: rgb(64, 64, 64);
+    animation: slideAndFade 2s ease-in-out forwards;
+  }
+
+  h3{
+    margin-top: 40px;
     animation: slideAndFade 2.5s ease-in-out forwards;
   }
 
   p{
-    margin-top: 40px;
     animation: slideAndFade 3s ease-in-out forwards;
+    text-align: justify;
   }
 
   @keyframes slideAndFade {
@@ -65,6 +70,12 @@ li.nav-item a:hover {
     transform: scale(1.03); 
 }
 
+li.nav-item.right {
+    float: right;
+    margin-right: 20px;
+}
+
+
 @keyframes slideDownAndFade {
     0% {
         transform: translateY(-10px);
@@ -92,9 +103,17 @@ li.nav-item a:hover {
 }
 
 .li2{
-    animation: slideAndFade 3.33s ease-in-out forwards;
+    animation: slideAndFade 3s ease-in-out forwards;
 }
 
 .li3{
-    animation: slideAndFade 3.67s ease-in-out forwards;
+    animation: slideAndFade 3s ease-in-out forwards;
+}
+
+.li4{
+    animation: slideAndFade 3s ease-in-out forwards;
+}
+
+.about{
+    margin-top: 100px;
 }
