@@ -46,7 +46,7 @@ body {
   ul.navbar {
     list-style-type: none;
     overflow: hidden;
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 li.nav-item {
@@ -59,7 +59,7 @@ li.nav-item a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 35px;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     animation: slideDownAndFade 3s;
 }
